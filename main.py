@@ -26,4 +26,3 @@ def compute_average(*args, **kwargs):
     else:
         document.getElementById("result").innerHTML = "Please enter scores between 0 and 100."
 
-js.window.compute_average = compute_average
