@@ -1,7 +1,7 @@
 from js import document
 import js
 
-def compute_average(*args, **kwargs):
+def compute_average(e):
     # Get input values from the HTML inputs
     score1 = document.getElementById("score1").value
     score2 = document.getElementById("score2").value
@@ -25,4 +25,7 @@ def compute_average(*args, **kwargs):
             document.getElementById("result").innerHTML = f"Average: {average:.2f} <br>❌ Failed"
     else:
         document.getElementById("result").innerHTML = "Please enter scores between 0 and 100."
+
+js.window.compute_average = compute_average
+
 
